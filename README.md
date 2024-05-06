@@ -4,9 +4,9 @@ ft_printf Project
 
 The ft_printf project is a core component of the 42 school curriculum. It is an exercise in C programming that involves implementing a custom version of the standard printf function from the C Standard Library. This project is designed to test and enhance my understanding of complex programming concepts such as:
 
-    -Variadic Functions: Handling functions with a variable number of arguments.
-    -Type Handling: Parsing and handling various data types, such as integers, strings, and floats.
-    -Formatting: Managing different format specifiers to produce correctly formatted output.
++ Variadic Functions: Handling functions with a variable number of arguments.
++ Type Handling: Parsing and handling various data types, such as integers, strings, and floats.
++ Formatting: Managing different format specifiers to produce correctly formatted output.
 
 Key Features:
 
