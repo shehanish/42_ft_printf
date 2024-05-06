@@ -41,7 +41,7 @@ Variadic functions allow users to pass a variable number and type of arguments t
 + The test_ft_printf.c file includes various test cases that compare my ft_printf() implementation to the native printf() function.
 + After compiling the project library, create the test program using:
 
-    shell
+    ''' shell
 
     cc -o TEST test_ft_printf.c libftprintf.a
 
