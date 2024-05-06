@@ -10,7 +10,7 @@ The ft_printf project is a custom implementation of a simplified printf() functi
 
 + Variadic Format Handling: Utilizes variadic macros to support a variable number of arguments.
 + Format Specifiers: My ft_printf supports a range of commonly used format specifiers:
-        + %c: Character output
+  + %c: Character output
         + %s: String output
         + %p: Pointer output
         + %d, %i: Signed decimal output
