@@ -1,17 +1,48 @@
 # 42_ft_printf
 
 ft_printf Project
+Overview
 
-The ft_printf project is a core component of the 42 school curriculum. It is an exercise in C programming that involves implementing a custom version of the standard printf function from the C Standard Library. This project is designed to test and enhance my understanding of complex programming concepts such as:
+The ft_printf project is a custom implementation of a simplified printf() function that uses variadic macros to manage different format specifiers. This exercise is part of the 42 school curriculum and helps me deepen my understanding of variadic functions, data type handling, and error management in C programming.
+Features
 
-+ Variadic Functions: Handling functions with a variable number of arguments.
-+ Type Handling: Parsing and handling various data types, such as integers, strings, and floats.
-+ Formatting: Managing different format specifiers to produce correctly formatted output.
+    Variadic Format Handling: Utilizes variadic macros to support a variable number of arguments.
+    Format Specifiers: My ft_printf supports a range of commonly used format specifiers:
+        %c: Character output
+        %s: String output
+        %p: Pointer output
+        %d, %i: Signed decimal output
+        %u: Unsigned decimal output
+        %x, %X: Hexadecimal output
+        %%: Percentage sign
+    Libft Integration: Leverages existing libft functions to enhance code reuse and maintain consistency.
+    Error Handling: Deals with invalid input formats gracefully, ensuring a smooth user experience.
 
-Key Features:
+Variadic Functions
 
-+ Custom Implementation: My version of ft_printf replicates many of the functionalities of the standard printf function.
-+ Precision and Accuracy: The function manages various format specifiers and arguments to produce precise and accurate outputs.
-+ Challenge and Growth: This project has challenged my problem-solving skills and pushed me to write efficient and reliable code.
+Variadic functions allow users to pass a variable number and type of arguments to a function. My ft_printf() function utilizes variadic functions as follows:
 
-By creating my own version of printf, I've deepened my understanding of C programming and improved my ability to handle complex tasks. Check out my ft_printf project to see my progress and approach to this essential coding challenge!
+    Prototype: int ft_printf(const char *format, ...) returns the number of characters printed (excluding the NULL terminator) or -1 on error.
+    va_list: A data type that represents a list of arguments.
+    **va_start(args, format):** Initializes a va_listpointing to the first variable argument following theformat` string.
+    **va_arg(args, type):** Retrieves the next argument from args` using the specified type.
+    **va_end(args):** Cleans up the va_list`.
+
+Error Handling
+
+    My implementation follows Ubuntu's behavior for printf() error returns, with a function called check_error() to handle edge cases, such as a lone % at the end of a format string or followed only by spaces.
+
+    For NULL pointers, I've chosen to print (nil) as output.
+
+Testing
+
+    The test_ft_printf.c file includes various test cases that compare my ft_printf() implementation to the native printf() function.
+    After compiling the project library, create the test program using:
+
+    shell
+
+    cc -o TEST test_ft_printf.c libftprintf.a
+
+    Note: Expect and ignore the 'incomplete format specifier' warnings as part of the testing process.
+
+Thank you for exploring my ft_printf project! Let me know if you have any feedback or suggestions.
