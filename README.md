@@ -1,7 +1,5 @@
 # 42_ft_printf
 
-# 42_ft_printf
-
 ft_printf Project
 
 The ft_printf project is a core component of the 42 school curriculum. It is an exercise in C programming that involves implementing a custom version of the standard printf function from the C Standard Library. This project is designed to test and enhance my understanding of complex programming concepts such as:
